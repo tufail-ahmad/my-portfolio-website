@@ -57,7 +57,7 @@ if (window.innerWidth >= 992) {
 
 /*==================== typed js ====================*/
 const typed = new Typed(".multiple-text", {
-  strings: ["Frontend Developer"],
+  strings: ["MERN Stack Developer", "APP Developer", "Freelancer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
@@ -70,4 +70,18 @@ const spans = document.querySelectorAll(".progress-container span");
 spans.forEach((span) => {
   span.style.width = span.dataset.width;
   span.innerHTML = span.dataset.width;
+});
+
+/*==================== read more btn functionality ====================*/
+const readMoreBtn = document.querySelector("#read-more");
+const aboutText = document.querySelector("#about-text");
+
+readMoreBtn.addEventListener("click", () => {
+  if (readMoreBtn.innerText === "Read More") {
+    aboutText.style.display = "block";
+    readMoreBtn.innerText = "Read Less";
+  } else {
+    aboutText.style.display = "none";
+    readMoreBtn.innerText = "Read More";
+  }
 });
