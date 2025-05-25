@@ -51,8 +51,8 @@ if (window.innerWidth >= 992) {
     ".home-img, .services-container, .portfolio-box, .contact form",
     { origin: "bottom" }
   );
-  ScrollReveal().reveal(".home-content h1, .about-img,", { origin: "left" });
   ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+  ScrollReveal().reveal(".home-content h1, .about-img,", { origin: "left" });
 }
 
 /*==================== typed js ====================*/
@@ -73,15 +73,19 @@ spans.forEach((span) => {
 });
 
 /*==================== read more btn functionality ====================*/
-const readMoreBtn = document.querySelector("#read-more");
-const aboutText = document.querySelector("#about-text");
+const toggleBtn = document.querySelectorAll(".toggle-btn");
 
-readMoreBtn.addEventListener("click", () => {
-  if (readMoreBtn.innerText === "Read More") {
-    aboutText.style.display = "block";
-    readMoreBtn.innerText = "Read Less";
-  } else {
-    aboutText.style.display = "none";
-    readMoreBtn.innerText = "Read More";
-  }
+toggleBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const moreText = btn.previousElementSibling;
+
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less"; // Adjust margin-top when expanded
+    } else if (moreText.style.display === "inline") {
+      // Collapse the text
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    }
+  });
 });

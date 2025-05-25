@@ -149,6 +149,8 @@ span {
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s ease;
+  margin-top: 2rem;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -184,6 +186,15 @@ span {
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+}
+
+.more-text {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+.about-content ul {
+  margin: 1rem 0 1rem 2.5rem;
 }
 
 .services {
