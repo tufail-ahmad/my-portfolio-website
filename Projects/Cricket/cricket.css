@@ -1,0 +1,102 @@
+body {
+  text-align: center;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  transition: all 0.5s ease-in;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+img {
+  width: 100px;
+}
+
+.btn {
+  background: transparent;
+  box-shadow: 1px 1px 2px rgba(114, 27, 5, 0.4),
+    -1px -1px 2px rgba(245, 245, 245, 0.9);
+  border: none;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  margin: 5px;
+}
+
+#reset-btn {
+  background-color: cornflowerblue;
+  border: none;
+  box-shadow: 1px 1px 2px rgba(114, 27, 5, 0.4),
+    -1px -1px 2px rgba(245, 245, 245, 0.9);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#reset-btn span {
+  position: relative;
+  top: 1px;
+  right: 1px;
+}
+
+.mode-btn {
+  position: absolute;
+  right: 50px;
+  background: transparent;
+  box-shadow: 1px 1px 2px rgba(8, 82, 107, 0.4),
+    -1px -1px 2px rgba(245, 245, 245, 0.9);
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+}
+
+.mode-btn svg:first-child {
+  display: none;
+}
+
+/* dark mode css */
+
+.darkMode {
+  background: linear-gradient(to right, #928dab, #1f1c2c);
+}
+
+.darkMode .mode-btn {
+  background: transparent;
+}
+
+.darkMode .mode-btn svg:first-child {
+  display: block;
+  position: relative;
+  left: 5.4px;
+  top: 0.4px;
+}
+
+.darkMode .mode-btn svg:last-child {
+  display: none;
+}
+
+.darkMode .main-heading {
+  color: gainsboro;
+}
+
+.darkMode .display-heading {
+  color: gainsboro;
+}
+
+.darkMode .btn {
+  box-shadow: 1px 1px 2px rgba(52, 204, 255, 0.4),
+    -1px -1px 2px rgba(245, 245, 245, 0.9);
+  background: transparent;
+  margin: 5px;
+}
+
+.darkMode #reset-btn {
+  background-color: #1f1c2c;
+  box-shadow: 1px 1px 2px rgba(52, 204, 255, 0.4),
+    -1px -1px 2px rgba(245, 245, 245, 0.9);
+}
+
+.darkMode #reset-btn span {
+  color: gainsboro;
+}

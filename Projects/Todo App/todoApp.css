@@ -1,0 +1,106 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    80deg,
+    rgba(238, 174, 202, 1) 20%,
+    rgba(148, 187, 233, 1) 84%
+  );
+  transition: all 0.5s ease-in;
+}
+
+.main-heading {
+  color: rgba(15, 84, 87, 0.9);
+  font-size: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.todo-input,
+.date-input {
+  font-size: 16px;
+  padding: 10px 5px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.add-button {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 14px;
+  font-size: 15px;
+}
+
+.delete-btn {
+  background-color: rgb(90, 8, 8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 14px;
+  font-size: 15px;
+}
+
+.mode-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  padding: 5px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px rgba(238, 174, 202, 0.9),
+    -1px -1px 2px rgba(245, 245, 245, 1.9);
+  border: none;
+}
+
+.mode-btn svg:first-child {
+  display: none;
+}
+
+.darkTheme {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(77, 77, 82, 1) 35%,
+    rgba(26, 98, 112, 0.8) 100%
+  );
+}
+
+.darkTheme .mode-btn svg:first-child {
+  display: block;
+}
+
+.darkTheme .mode-btn svg:last-child {
+  display: none;
+}
+
+.darkTheme .todo-input {
+  color: gainsboro;
+}
+
+.darkTheme .date-input {
+  color: gainsboro;
+}
+
+.darkTheme .grid-container {
+  color: gainsboro;
+}
+
+.darkTheme .main-heading {
+  color: burlywood;
+}
+
+.darkTheme .add-button {
+  background-color: rgb(8, 63, 8);
+}
