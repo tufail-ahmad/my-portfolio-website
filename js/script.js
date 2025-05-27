@@ -51,8 +51,8 @@ if (window.innerWidth >= 992) {
     ".home-img, .services-container, .portfolio-box, .contact form",
     { origin: "bottom" }
   );
+  ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
   ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
-  ScrollReveal().reveal(".home-content h1, .about-img,", { origin: "left" });
 }
 
 /*==================== typed js ====================*/
